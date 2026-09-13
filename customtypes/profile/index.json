@@ -55,13 +55,6 @@
       "social_links": {
         "config": {
           "fields": {
-            "name": {
-              "config": {
-                "label": "name",
-                "placeholder": ""
-              },
-              "type": "Text"
-            },
             "url": {
               "config": {
                 "allowTargetBlank": true,
@@ -72,6 +65,24 @@
                 "select": null
               },
               "type": "Link"
+            },
+            "social": {
+              "config": {
+                "label": "social",
+                "options": [
+                  "github",
+                  "twitch",
+                  "twitter",
+                  "facebook",
+                  "instagram",
+                  "youtube",
+                  "linkedin",
+                  "whatsapp",
+                  "tiktok"
+                ],
+                "placeholder": ""
+              },
+              "type": "Select"
             }
           },
           "label": "social_links",

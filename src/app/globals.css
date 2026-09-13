@@ -2,25 +2,58 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+
+  --page-background: url("/backgrounds/bg-desktop-light.svg");
+
+  --text: #000000;
+  --toggle: #ffffff;
+  --stroke: rgb(0 0 0 / 50%);
+  --surface: rgb(0 0 0 / 5%);
+  --surface-hover: rgb(0 0 0 / 2%);
+  --highlight: rgb(0 0 0 / 10%);
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+
+  --page-background: url("/backgrounds/bg-desktop.svg");
+
+  --text: #ffffff;
+  --toggle: #000000;
+  --stroke: rgb(255 255 255 / 50%);
+  --surface: rgb(255 255 255 / 10%);
+  --surface-hover: rgb(255 255 255 / 5%);
+  --highlight: rgb(255 255 255 / 20%);
+}
+
+@media (max-width: 767px) {
+  :root {
+    --page-background: url("/backgrounds/bg-mobile-light.svg");
+  }
+
+  .dark {
+    --page-background: url("/backgrounds/bg-mobile.svg");
+  }
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-text: var(--text);
+  --color-toggle: var(--toggle);
+  --color-stroke: var(--stroke);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-highlight: var(--highlight);
+
+  --font-sans: var(--font-inter);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
 }
