@@ -1,0 +1,87 @@
+{
+  "format": "custom",
+  "id": "profile",
+  "json": {
+    "Main": {
+      "avatar": {
+        "config": {
+          "constraint": {},
+          "label": "avatar",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "name": {
+        "config": {
+          "label": "name",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "description": {
+        "config": {
+          "label": "description",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "links": {
+        "config": {
+          "fields": {
+            "title": {
+              "config": {
+                "label": "title",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "url": {
+              "config": {
+                "allowTargetBlank": true,
+                "allowText": true,
+                "label": "url",
+                "placeholder": "",
+                "repeat": false,
+                "select": null
+              },
+              "type": "Link"
+            }
+          },
+          "label": "links",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "social_links": {
+        "config": {
+          "fields": {
+            "name": {
+              "config": {
+                "label": "name",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "url": {
+              "config": {
+                "allowTargetBlank": true,
+                "allowText": true,
+                "label": "url",
+                "placeholder": "",
+                "repeat": false,
+                "select": null
+              },
+              "type": "Link"
+            }
+          },
+          "label": "social_links",
+          "repeat": true
+        },
+        "type": "Group"
+      }
+    }
+  },
+  "label": "Profile",
+  "repeatable": false,
+  "status": true
+}
